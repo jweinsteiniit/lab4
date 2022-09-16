@@ -9,16 +9,15 @@
     <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
       <fieldset>
         <legend>My Info</legend>
-        <label for="firstname">First Name: <input type="text" name="first_name_field"></label>
-        <label for="lastname">Last Name: <input type="text" name="last_name_field"></label>
-        <label for="phonenum">Phone Number: <input type="text" name="phone_field"></label>
-        <label for="email">Email Address: <input type="text" name="email_field"></label>
-        <label for="gender">Gender:
-          <label for="gender">Male <input type="radio" name="gender_field" value="male"></label>
-          <label for="gender">Female <input type="radio" name="gender_field" value="female"></label>
-        </label>
+        <label for="firstname">First Name: <input type="text" name="first_name_field" id="firstname"></label>
+        <label for="lastname">Last Name: <input type="text" name="last_name_field" id="lastname"></label>
+        <label for="phonenum">Phone Number: <input type="text" name="phone_field" id="phonenum"></label>
+        <label for="email">Email Address: <input type="text" name="email_field" id="email"></label>
+        <p>Gender:</p>
+        <label for="male">Male <input type="radio" name="gender_field" value="male" id="male"></label>
+        <label for="female">Female <input type="radio" name="gender_field" value="female" id="female"></label>
         <label for="age">Age:
-          <select name="age_field">
+          <select name="age_field" id="age">
             <option value="Under 18">Under 18</option>
             <option value="18-24">18-24</option>
             <option value="25-34">25-34</option>
@@ -31,16 +30,14 @@
       </fieldset>
       <fieldset>
         <legend>My Avalibility</legend>
-        <label for="avalibility">
-          <label for="avalibility">Sunday<input type="checkbox" name="available_field[]" value="Sunday"></label>
-          <label for="avalibility">Monday<input type="checkbox" name="available_field[]" value="Monday"></label>
-          <label for="avalibility">Tuesday<input type="checkbox" name="available_field[]" value="Tuesday"></label>
-          <label for="avalibility">Wednesday<input type="checkbox" name="available_field[]" value="Wednesday"></label>
-          <label for="avalibility">Thursday<input type="checkbox" name="available_field[]" value="Thursday"></label>
-          <label for="avalibility">Friday<input type="checkbox" name="available_field[]" value="Friday"></label>
-          <label for="avalibility">Saturday<input type="checkbox" name="available_field[]" value="Saturday"></label>
-        </label>
-        <label for="comments">Any Comments?<textarea name="comments_field"></textarea></label>
+        <label for="sunday">Sunday<input type="checkbox" name="available_field[]" id="sunday" value="Sunday"></label>
+        <label for="monday">Monday<input type="checkbox" name="available_field[]" id="monday" value="Monday"></label>
+        <label for="tuesday">Tuesday<input type="checkbox" name="available_field[]" id="tuesday" value="Tuesday"></label>
+        <label for="wednesday">Wednesday<input type="checkbox" name="available_field[]" id="wednesday" value="Wednesday"></label>
+        <label for="thursday">Thursday<input type="checkbox" name="available_field[]" id="thursday" value="Thursday"></label>
+        <label for="friday">Friday<input type="checkbox" name="available_field[]" id="friday" value="Friday"></label>
+        <label for="saturday">Saturday<input type="checkbox" name="available_field[]" id="saturday" value="Saturday"></label>
+        <label for="comments">Any Comments?<textarea name="comments_field" id="comments"></textarea></label>
       </fieldset>
       <input type="hidden" name="hidden_field" value="jweinstein">
       <fieldset>
